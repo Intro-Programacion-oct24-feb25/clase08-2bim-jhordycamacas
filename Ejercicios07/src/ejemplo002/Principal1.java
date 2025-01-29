@@ -35,8 +35,13 @@ public class Principal1 {
             mensajeFinal = String.format("%s%s\n", mensajeFinal, 
                     presentarReporte(nombre, apellido, tipoNotas, 
                     promedioEstudiante, numeroNotasArribaPromedio));
+            //lo que realiza aqui es acumnular datos haciendo uso de una funcion
+            //como resultado nos queda una cadena con todos los datos guardados
         }
         CrearArchivoTexto.agregarRegistros(mensajeFinal);
+        //finalemnte envia la cadena para que se guarde en un archivo, lo hace
+        //llamando a un procedimiento ubicado en la clase CrearArchivoTexto
+        //los datos se guardan en n archivo
 
     }
     
